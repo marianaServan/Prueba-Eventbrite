@@ -22,6 +22,11 @@
                 </p>
                 <div id="eventbrite-widget-container-557404992337"></div>
 
+                <!-- Contenido Noscript para SEO adicional -->
+                <noscript><a href="https://www.eventbrite.com.ar/e/prueba-nro-x-tickets-557404992337" rel="noopener noreferrer" target="_blank">Comprar entradas en Eventbrite</a></noscript>
+                <!-- Podés personalizar este botón como quieras -->
+                <button id="eventbrite-widget-modal-trigger-557404992337" type="button">Comprar entradas</button>
+
                 <script src="https://www.eventbrite.com.ar/static/widgets/eb_widgets.js"></script>
 
                 <script type="text/javascript">
@@ -30,14 +35,11 @@
                     };
 
                     window.EBWidgets.createWidget({
-                        // Required
                         widgetType: 'checkout',
                         eventId: '557404992337',
-                        iframeContainerId: 'eventbrite-widget-container-557404992337',
-
-                        // Optional
-                        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                        modal: true,
+                        modalTriggerElementId: 'eventbrite-widget-modal-trigger-557404992337',
+                        onOrderComplete: exampleCallback
                     });
                 </script>
             </div>
