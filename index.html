@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <section>
+        <h1>Prueba de eventbrite</h1>
+        <h2>Eventos</h2>
+        <article>
+            <div>
+                <h3>Evento 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+                <div id="eventbrite-widget-container-557404992337"></div>
+
+                <script src="https://www.eventbrite.com.ar/static/widgets/eb_widgets.js"></script>
+
+                <script type="text/javascript">
+                    var exampleCallback = function() {
+                        console.log('¡Pedido completado!');
+                    };
+
+                    window.EBWidgets.createWidget({
+                        // Required
+                        widgetType: 'checkout',
+                        eventId: '557404992337',
+                        iframeContainerId: 'eventbrite-widget-container-557404992337',
+
+                        // Optional
+                        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                    });
+                </script>
+            </div>
+            <div>
+                <h3>Evento 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+            <div>
+                <h3>Evento 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+            <div>
+                <h3>Evento 4</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+            <div>
+                <h3>Evento 5</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+            <div>
+                <h3>Evento 6</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+            <div>
+                <h3>Evento 7</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur 
+                    ipsam incidunt, consequuntur deleniti quidem quod, asperiores minus dignissimos 
+                    officiis in quisquam odio, deserunt quos exercitationem soluta animi error dolore.
+                </p>
+            </div>
+        </article>
+    </section>  
+</body>
+</html>
